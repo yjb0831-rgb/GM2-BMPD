@@ -235,7 +235,7 @@
 			</div>
 
 			<div class="form-group">
-				<label>4. 작업자 (Operator) : *</label>
+				<label>4. 작업자 (PIC) : *</label>
 				<input type="text" id="worker" placeholder="이름 입력 (Enter Name)">
 			</div>
 
@@ -291,7 +291,7 @@
             "L_Merge Vision", "L_Long Sepa Sealing Vision", "L_NG Mark Vision", "L_Final Vision"
         ],
         "STK": [
-            "S_Sepa Vision", "S_Align Vision", "S_Stack Vision", "S_Tape Final Vision", "S_4Side Vision"
+            "S_Sepa Vision", "S_Align Vision", "S_Stack Vision","S_Half Sepa Vision", "S_Half Vision", "S_Half Stack Vision", "S_Tape Final Vision", "S_4Side Vision"
         ],
         "PKG": [
             "P_Lead align (+)", "P_Lead align (-)", "P_Pouch align", "P_Pouch crack", "P_Lead", 
@@ -400,7 +400,7 @@
         }
 
         const textFields = [
-            { id: 'worker', name: '작업자 (Operator)' },
+            { id: 'worker', name: '작업자 (PIC)' },
             { id: 'phenomenon', name: '현상 (Phenomenon)' },
             { id: 'cause', name: '원인 (Cause)' },
             { id: 'action', name: '조치 (Action)' }
@@ -442,7 +442,7 @@
 2-3. 원인처 (Source of Cause) : ${data.source}
 3-1. 발생시간 (Occurrence Time) : ${data.startTime}
 3-2. 조치완료 (Action Completed) : ${data.endTime}
-4. 작업자 (Operator) : ${data.worker}
+4. 작업자 (PIC) : ${data.worker}
 5. 현상 (Phenomenon) : ${data.phenomenon}
 6. 원인 (Cause) : ${data.cause}
 7. 조치 (Action) : ${data.action}`;
